@@ -10,11 +10,11 @@
 int main(void)
 {
 int num1 = 48;
-while (num < 60)
+while (num1 < 60)
 {
 putchar(num1);
 ++num1;
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
