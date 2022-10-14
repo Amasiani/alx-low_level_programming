@@ -12,7 +12,7 @@ int main(void)
 int lc = 'a';
 while (lc <= 'z')
 {
-if (lc == e || lc == q)
+if (lc == 'e' || lc == 'q')
 {
 lc += 1;
 }
