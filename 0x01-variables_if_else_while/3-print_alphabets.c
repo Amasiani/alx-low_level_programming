@@ -21,6 +21,6 @@ while (uc <= 'Z')
 putchar(uc);
 uc += 1;
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
