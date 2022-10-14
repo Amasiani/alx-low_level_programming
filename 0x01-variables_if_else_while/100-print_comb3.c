@@ -1,9 +1,9 @@
-#include <stdion.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
  *
- * Description:
+ * Description: prints all possible different combinations of three digits.
  * Return: Zero
 */
 
