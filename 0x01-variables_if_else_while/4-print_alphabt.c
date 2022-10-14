@@ -10,7 +10,7 @@
 int main(void)
 {
 int lc = 'a';
-while (lc < = 'z')
+while (lc <= 'z')
 {
 if (lc == e || lc == q)
 {
@@ -22,6 +22,6 @@ putchar(lc);
 lc += 1;
 }
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
