@@ -14,7 +14,7 @@ int comm_num = 44;
 while (num <= 57)
 {
 putchar(num);
-if (num != num)
+if (num != 57)
 {
 putchar(comm_num);
 putchar(32);
