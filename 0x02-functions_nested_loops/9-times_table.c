@@ -21,18 +21,18 @@ void times_table(void)
 				if (col != 0)
 				{
 					_putchar(' ');
-						_putchar(' ');
+					_putchar(' ');
 				}
 				_putchar(multiple + 48);
 			}
 			else
 			{
 				_putchar(' ');				
-				_putchar((multiple / 10) + 48);
-				_putchar((multiple % 10) + 10);
+				_putchar((multiple / 10) + '0');
+				_putchar((multiple % 10) + '0');
 			}
 			if (col != 9)
-				_putchar(' ');
+				_putchar(',');
 		}
 		_putchar('\n');
 	}
