@@ -18,12 +18,11 @@ while (fibonacci < 4000000)
 	fibonacci = a + b;
 	a = b;
 	b = fibonacci;
-	if (a % 2) == 0)
+	if ((a % 2)) == 0)
 	{
 		start += a;
 	}
-	count++;
 }
-print("%d\n", start);
+printf("%d\n", start);
 return (0);
 }
