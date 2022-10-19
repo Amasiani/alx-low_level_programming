@@ -8,8 +8,8 @@
 
 int main(void)
 {
-long a = 0;
-long b = 1;
+long int a = 1;
+long int b = 2;
 int num = 0;
 long fib;
 
@@ -17,12 +17,12 @@ while (num < 50)
 {
 	fib = a + b;
 	if (num != 49)
-		printf("%d\n, ", fib);
+		printf("%ld\n, ", fib);
 	else
-		printf("%d\n", fib);
+		printf("%ld\n", fib);
 	a = b;
 	b = fib;
-	n += 1;
+	num += 1;
 }
 return (0);
 }
