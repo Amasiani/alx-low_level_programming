@@ -13,7 +13,7 @@ void times_table(void)
 
 	for (row = 0; row < 10; row++)
 	{
-		for (col = 0; col  10; col++)
+		for (col = 0; col < 10; col++)
 		{
 			multiple = (row * col);
 			if (multiple < 10)
@@ -21,7 +21,7 @@ void times_table(void)
 				if (col != 0)
 				{
 					_putchar(' ');
-						_puchar(' ');
+						_putchar(' ');
 				}
 				_putchar(multiple + 48);
 			}
