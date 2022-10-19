@@ -9,6 +9,7 @@
 int _islower(int c)
 {
 	char alphabet;
+	alphabet = c;
 
 	if (c >= 'a' && c <= 'z')
 		return (0);
