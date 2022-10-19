@@ -2,7 +2,7 @@
 
 /**
 * _abs - compoute the absolut value of integer
-* @int: value to check
+* @num: value to check
 * Return: 0
 */
 
