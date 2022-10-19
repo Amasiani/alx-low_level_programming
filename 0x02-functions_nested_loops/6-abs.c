@@ -6,12 +6,12 @@
 * Return: 0
 */
 
-int _abs(int)
+int _abs(int num)
 {
-	int r;
+	int num;
 
-	if (r > 0)
-		return (r);
+	if (num > 0)
+		return (num);
 	else
-		return (-r);
+		return (-num);
 }
