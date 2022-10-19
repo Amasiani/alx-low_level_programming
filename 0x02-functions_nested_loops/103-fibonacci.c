@@ -8,21 +8,22 @@
 */
 int main(void)
 {
-int a = 1;
-int b = 2;
-int count = 0;
-int result;
-int fibonacci;
+long int a, b, start, fibonacci;
+a = 1;
+b = 2;
+start = fibonacci = 0;
 
-while (count < 4000000)
+while (fibonacci < 4000000)
 {
 	fibonacci = a + b;
-	result =  fibonacci % 2;
-	if (result == 0)
+	a = b;
+	b = fibonacci;
+	if (a % 2) == 0)
 	{
-		result += result;
-		printf("%d\n", result);
+		start += a;
 	}
 	count++;
 }
+print("%d\n", start);
+return (0);
 }
