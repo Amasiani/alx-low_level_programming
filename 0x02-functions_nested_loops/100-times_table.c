@@ -9,7 +9,7 @@
 
 void print_times_table(int n)
 {
-	int col, col;
+	int col, row;
 	int multiple = 0;
 
 	if (n <= 15 && n >= 0)
@@ -25,7 +25,7 @@ void print_times_table(int n)
 					{
 						_putchar(' ');
 						_putchar(' ');
-						_putchar(' ';)
+						_putchar(' ');
 					}
 					_putchar(multiple + '0');
 				}
