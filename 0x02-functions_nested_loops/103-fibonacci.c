@@ -23,6 +23,6 @@ while (fibonacci < 4000000)
 		start += a;
 	}
 }
-printf("%d\n", start);
+printf("%ld\n", start);
 return (0);
 }
