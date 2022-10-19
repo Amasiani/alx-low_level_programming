@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* jack_bauer - print last hour from 00:00 - 23:59
+* jack_baurer - print last hour from 00:00 - 23:59
 *
 * Return: */
 
-void jack_bauer(void)
+void jack_baurer(void)
 {
 	int hr = 0;
 	int min = 0;
@@ -19,7 +19,7 @@ void jack_bauer(void)
 			_putchar(':');
 			_putchar(min / 10 + '0');
 			_putchar(min % 10 + '0');
-			min++
+			min++;
 		}
-		hr++
+		hr++;
 }
