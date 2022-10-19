@@ -17,7 +17,7 @@ while (num < 50)
 {
 	fib = a + b;
 	if (num != 49)
-		printf("%ld\n, ", fib);
+		printf("%ld, ", fib);
 	else
 		printf("%ld\n", fib);
 	a = b;
