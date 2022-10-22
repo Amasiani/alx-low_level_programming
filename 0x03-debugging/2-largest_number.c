@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
 * largest_number - print largest of 3 numbers
