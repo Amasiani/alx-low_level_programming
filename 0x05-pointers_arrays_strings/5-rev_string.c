@@ -14,10 +14,11 @@ void rev_string(char *s)
 
 	while (s[counter] != '\n')
 		counter++;
-		for (i = 0; i < counter; i++)
-		{
-			counter--;
-			reverse = s[i];
-			s[i] == s[counter];
-		}
+	for (i = 0; i < counter; i++)
+	{
+		counter--;
+		reverse = s[i];
+		s[i] = s[counter];
+		s[count] = reverse;
+	}
 }
