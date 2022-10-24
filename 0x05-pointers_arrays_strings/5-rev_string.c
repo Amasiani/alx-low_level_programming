@@ -18,6 +18,6 @@ void rev_string(char *s)
 		{
 			counter--;
 			reverse = s[i];
-			s[i] ==s[counter];
+			s[i] == s[counter];
 		}
 }
