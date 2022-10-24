@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-* puts2 - print every other string, starting with the furst character
-* @s: value to check for
+* puts2 - print every other string, starting with the first character
+* @str: value to check for
 */
 
 void puts2(char *str)
