@@ -10,18 +10,18 @@
 int main(void)
 {
 int ran = 0, i = 0;
-time_tt;
+time_t;
 
-srand((unsigned int) time(&t));
+srand((unsigned int) time_t(&t));
 
 while (i < 2772)
 {
 	ran = rand() % 128;
 	if ((i + ran) > 2772)
 		break;
-	i = c + ran;
+	i = i + ran;
 	printf("%c", ran);
 }
-printf("%c\v", (277 - i));
+printf("%c\n", (277 - i));
 return (0);
 }
