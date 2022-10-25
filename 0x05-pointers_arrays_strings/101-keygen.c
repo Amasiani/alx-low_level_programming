@@ -10,9 +10,9 @@
 int main(void)
 {
 int ran = 0, i = 0;
-time_t;
+time_t time;
 
-srand((unsigned int) time_t(&t));
+srand((unsigned int) time_t(&time));
 
 while (i < 2772)
 {
