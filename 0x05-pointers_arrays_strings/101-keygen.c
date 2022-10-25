@@ -22,6 +22,6 @@ while (i < 2772)
 	i = i + ran;
 	printf("%c", ran);
 }
-printf("%c\n", (277 - i));
+printf("%c\n", (2772 - i));
 return (0);
 }
