@@ -3,7 +3,8 @@
 /**
 * *_strncpy - copy a string
 * @dest: the destination value to check
-* @src: the source value
+* @src: the source valu
+* @n: number byte from deste
 *
 * Return: char value.
 */
