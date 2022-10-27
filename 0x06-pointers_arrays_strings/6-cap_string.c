@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* cap-string - capitalize first letter
+* cap_string - capitalize first letter
 * @s: Value to check
 * Return: character
 */
