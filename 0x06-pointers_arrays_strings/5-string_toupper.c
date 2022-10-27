@@ -2,7 +2,7 @@
 
 /**
 * string_toupper - change lower case to upper
-8 @ch: value to check
+* @ch: value to check
 * Return: string value
 */
 
