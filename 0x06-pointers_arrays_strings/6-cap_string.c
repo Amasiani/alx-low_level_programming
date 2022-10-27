@@ -3,26 +3,37 @@
 
 /**
  * cap_string - function that capitalizes all words of a string.
- * @s: Pointer to Char
+ * @ch: Pointer to Char
  * Return: char.
  */
 
-char *cap_string(char *s)
+char *cap_string(char *ch)
 {
-	int i = 0, i;
-	int caps = 13;
-	char sel[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '(', ')', '{', '}'};
+	int i 0;
 
-	while (s[a])
+	while (*(ch + i) != '\0')
 	{
-		i = 0;
-		while (i < caps)
+		if (i == 0)
+			*(ch + i) = *(ch + i) - ' ';
+		if (*(ch + i) == ' ' || *(ch + i) == '\t')
+			i++;
+		else if (*(ch + i) == '\n' || *(ch + i) == ',')
+			i++;
+		else if (*(ch + i) == ';' || *(ch + i) == '.')
+			i++;
+		else if (*(ch + i) == '!' || *(ch + i) == '?')
+			i++;
+		else if (*(ch + i) == '"' || *(ch + i) == '(')
+			i++;
+		else if (*(ch + i) == ')' || *(ch + i) == '{')
+			i++;
+		else if (*(ch + i) == '}')
+			i++;
+		if (*(ch + i) >= 97 && *(ch + i) <= 122)
 		{
-			if ((a == 0 || s[a - 1] == sel[i] && (s[a] >= 97 && s[a] <= 122))
-				s[a] -= 32;
-			i++
+			*(ch + i) = *(ch + i) - ' ';
+			i++;
 		}
-		a++
 	}
-	return (s);
+	return (ch);
 }
