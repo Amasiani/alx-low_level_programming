@@ -6,24 +6,22 @@
 * @desk: destination string
 * @src: source string
 *
-* Return: Reutrn s pointer to resulting string
+* Return: Return s pointer to resulting string
 */
 
 char *_strcat(char *dest, char *src)
 {
-	int len = 0, i = 0;
+	int len = 0, i;
 
-	while (*(dest + len) != '\0')
+	while (desc[len])
 	{
 		len++;
 	}
-	if (*(dest + len) + *(src + i))
+	if (i = 0; src[i] != 0; i++)
 	{
-		*(dest + len) = *(src + i);
-		if (*(src + i) == '\0')
-			break;
+		dest[len] = src[i];
 		len++;
-		i++;
 	}
+	dest[len] = '\0';
 	return (dest);
 }
