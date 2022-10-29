@@ -10,8 +10,8 @@ char *rot13(char *s)
 {
 	int i = 0;
 	int j = 0;
-	char *l = "abcdefghijklmnopqrstuvwxyABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	char *r13 = "noprstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+	char *l = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	char *r13 = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
 
 	while (*(s + i) != '\0')
 	{
