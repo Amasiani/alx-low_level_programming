@@ -9,29 +9,24 @@
 
 char *cap_string(char *s)
 {
-        int i = 0;
+	char counter = 0, i;
+	int sel_word[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
 
-        while (*(s + i) != '\0')
-        {
-                if (i == 0 && (*(s + i) >= 97 && *(s + i) <= 122))
-                {
-                        *(s + i) = *(s + i) - ' ';
-                        i++;
-                }
-                if (*(s + i) == ' ' || *(s + i) == '\n' || *(s + i) == '\t'
-                    || *(s + i) == ',' || *(s + i) == ';' || *(s + i) == '!'
-                    || *(s + i) == '?' || *(s + i) == '"' || *(s + i) == '('
-                    || *(s + i) == ')' || *(s + i) == '{' || *(s + i) == '}'
-                    || *(s + i) == '.')
-                {
-                        i++;
-                        if (*(s + i) >= 97 && *(s + i) <= 122)
-                        {
-                                *(s + i) = *(s + i) - ' ';
-                        }
-                }
-                else
-                        i++;
-        }
-        return (s);
+	if (*(s + counter) >= 97 && *(s + counter) <= 122)
+		*(s + counter) = *(s + counter) - 32;
+	counter++;
+	while (*(s + counter) != '\0')
+	{
+		for (i = 0; i < 13; i++)
+		{
+			if (*(s + counter) == sel_word[i])
+			{
+				if (*(s + (counter + 1) >= 97) && *(s + counter) <= 122)
+					*(s + (counter + 1)) = *(s + (counter + 1)) - 32;
+				break;
+			}
+		}
+		counter++
+	}
+	return (s);
 }
