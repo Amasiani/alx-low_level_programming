@@ -23,9 +23,9 @@ void print_number(int n)
 	j = i;
 	counter = 1;
 
-	while (d > 9)
+	while (j > 9)
 	{
-		d /= 10;
+		j /= 10;
 		counter *= 10;
 	}
 
