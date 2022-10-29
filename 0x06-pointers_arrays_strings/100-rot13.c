@@ -10,8 +10,8 @@ char *rot13(char *s)
 {
 	int i = 0;
 	int j = 0;
-	char *l = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	char *r13 = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"
+	char *l = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char *r13 = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	while (*(s + i) != '\0')
 	{
@@ -22,7 +22,7 @@ char *rot13(char *s)
 				*(s + i) = *(r13 + j);
 				break;
 			}
-			j++
+			j++;
 		}
 		j = 0;
 		i++;
