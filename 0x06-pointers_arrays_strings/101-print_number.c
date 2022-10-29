@@ -29,7 +29,7 @@ void print_number(int n)
 		counter *= 10;
 	}
 
-	for (; counter >= 1; counter /= 10;)
+	for (; counter >= 1; counter /= 10)
 	{
 		_putchar(((i / counter) % 10) + 48);
 	}
