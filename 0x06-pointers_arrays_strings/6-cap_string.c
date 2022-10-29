@@ -21,7 +21,7 @@ char *cap_string(char *s)
 		{
 			if (*(s + counter) == sel_word[i])
 			{
-				if (((s + (counter + 1)) >= 97) && ((s + (counter + 1)) <= 122))
+				if ((*(s + (counter + 1)) >= 97) && (*(s + (counter + 1)) <= 122))
 					*(s + (counter + 1)) = *(s + (counter + 1)) - 32;
 				break;
 			}
