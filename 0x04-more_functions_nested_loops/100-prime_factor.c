@@ -19,7 +19,7 @@ while (num != 1)
 		num = num / divider;
 		largest_prime = divider;
 	}
-	divider += 1;
+	divider--;
 }
 printf("%ld ", largest_prime);
 return (0);
