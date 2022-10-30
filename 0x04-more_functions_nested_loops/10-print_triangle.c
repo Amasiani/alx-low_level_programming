@@ -7,25 +7,18 @@
 * Return: zero
 */
 
-voud print_triangle(int size)
+void print_triangle(int size)
 {
-	int row, col, calc;
+	int row, col;
 
-	if (size > 0)
+	for (row = 0; row < size; row++)
 	{
-		for (row = 0; row < size; row++)
-		{
-			for (col = 0; col < size; col++)
-			{
-				calc = (size - row) - 1;
-				if (col < calc)
-					_putchar(' ');
-				else
-					_putchar(35);
-			}
-			_putchar('\n');
-		}
+		for (col = 0; col < (size - row); col++)
+			_putchar(' ');
+		for (col--; col < size; col++)
+			_putchar(35);
+		if (row < (size - 1))
+			_putchar('\n')
 	}
-	else
-		_putchar('\n');
+	_putchar('\n');
 }
