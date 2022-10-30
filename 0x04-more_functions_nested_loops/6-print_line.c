@@ -11,13 +11,9 @@ void print_line(int n)
 {
 	int count = 0;
 
-	while (count < n)
+	for  (; count < n; count++)
 	{
-		if (n <=  0)
-			_putchar('\n');
-		else
-			_putchar(95);
-		count++;
+		_putchar(95);
 	}
 	_putchar('\n');
 }
