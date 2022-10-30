@@ -19,6 +19,6 @@ for  (; divider <= num; divider++)
 		divider--;
 	}
 }
-printf("%ld ", divider);
+printf("%ld\n", divider);
 return (0);
 }
