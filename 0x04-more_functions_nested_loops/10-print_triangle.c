@@ -18,7 +18,7 @@ void print_triangle(int size)
 		for (col--; col < size; col++)
 			_putchar(35);
 		if (row < (size - 1))
-			_putchar('\n')
+			_putchar('\n');
 	}
 	_putchar('\n');
 }
