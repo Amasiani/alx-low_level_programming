@@ -11,7 +11,7 @@ int main(void)
 long int num = 612852475143;
 long int divider = 2;
 
-for  (; divider <= n; divider++)
+for  (; divider <= num; divider++)
 {
 	if (num % divider == 0)
 	{
