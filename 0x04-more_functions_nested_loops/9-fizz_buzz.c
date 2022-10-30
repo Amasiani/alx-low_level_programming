@@ -15,7 +15,7 @@ int num;
 num = 1;
 printf("%d", num);
 
-for (num = 1; num <= 100; num++)
+for (num = 2; num <= 100; num++)
 {
 	if (num % 3 == 0 && num % 5 == 0)
 	{
