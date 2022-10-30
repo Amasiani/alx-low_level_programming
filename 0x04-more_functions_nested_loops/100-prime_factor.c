@@ -10,17 +10,15 @@ int main(void)
 {
 long int num = 612852475143;
 long int divider = 2;
-long int largest_prime = 0;
 
-while (num != 1)
+for  (; divider <= n; divider++)
 {
-	if (num % divider == 1)
+	if (num % divider == 0)
 	{
-		num = num / divider;
-		largest_prime = divider;
+		num /= divider;
+		divider--;
 	}
-	divider--;
 }
-printf("%ld ", largest_prime);
+printf("%ld ", divider);
 return (0);
 }
