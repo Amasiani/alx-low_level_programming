@@ -29,14 +29,14 @@ void print_buffer(char *b, int size)
 					printf(" ");
 			}
 			printf(" ");
-			for (l = j; l < j + 10; ll++)
+			for (l = j; l < j + 10; l++)
 			{
 				if (l >= size)
 					break;
 				if (*(b + l) < 32 || *(b + l) > 126)
 					printf("%c", '.');
 				else
-					print("%c", *(b + l));
+					printf("%c", *(b + l));
 			}
 			printf("\n");
 		}
