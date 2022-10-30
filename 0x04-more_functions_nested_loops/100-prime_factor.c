@@ -14,7 +14,7 @@ long int largest_prime = 0;
 
 while (num != 1)
 {
-	if (num & divider == 1)
+	if (num % divider == 1)
 	{
 		num = num / divider;
 		largest_prime = divider;
