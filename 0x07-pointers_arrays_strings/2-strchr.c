@@ -16,9 +16,7 @@ char *_strchr(char *s, char c)
 	{
 		if (*(s + counter)  == c)
 			return (s);
-		else
-			_putchar('not found!!');
 		counter++;
 	}
-		return (0);
+		return (s);
 }
