@@ -15,8 +15,7 @@ char *_strchr(char *s, char c)
 	while (*(s + counter)  != '\0')
 	{
 		if (*(s + counter)  == c)
-			return (s);
+			return (s)
 		counter++;
 	}
-	return (s);
 }
