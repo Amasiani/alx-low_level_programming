@@ -14,11 +14,8 @@ char *_strchr(char *s, char c)
 
 	while (*(s + counter)  != '\0')
 	{
-		if (*(s + counter)  == c)
-			return (s);
-		else
-			return (NULL);
+		if (*(s + counter)  == c) return (s)
 		counter++;
 	}
-	return (0);
+	return (NULL));
 }
