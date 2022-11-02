@@ -13,8 +13,8 @@ void print_diagsums(int *a, int size)
 	int totalB = 0;
 
 	for (i = 0; i <= (size * size); i = i + size + 1)
-		totalA = tottalA + a[i];
+		totalA = totalA + a[i];
 	for (j = size - 1; j <= (size * size) - size; j = j + size - 1)
-		totalB = totalB + a[n];
+		totalB = totalB + a[j];
 	printf("%d", "%d\n", totalA, totalB);
 }
