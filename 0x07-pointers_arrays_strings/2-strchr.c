@@ -16,9 +16,7 @@ char *_strchr(char *s, char c)
 	{
 		if (*(s + counter)  == c)
 			return (s);
-		else
-			return (NULL);
 		counter++;
 	}
-	_putchar('\0');
-}
+	_putchar('\n');
+}	return (NULL);
