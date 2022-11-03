@@ -17,7 +17,7 @@ int PrimeNum(unsigned int n, unsigned int i)
 		else
 			return (0);
 	}
-	return (0 + PrimNum(n, i + 1));
+	return (0 + PrimeNum(n, i + 1));
 }
 
 /**
@@ -31,5 +31,5 @@ int is_prime_number(int n)
 {
 	 if (n <= 1)
 		return (0);
-	return (PrimNum(n, 2));
+	return (PrimeNum(n, 2));
 }
