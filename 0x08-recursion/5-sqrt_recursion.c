@@ -7,6 +7,16 @@
 * Return: int
 */
 
+int getNumSqr(int num, int i)
+{
+	if (num == (i * i))
+		return (i);
+	else if (num > (i * i))
+		return (getNumSqr(num, i + 1));
+	else
+		return (-1);
+}
+
 int _sqrt_recursion(int n)
 {
 	if (n == 0)
@@ -16,14 +26,4 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 	return (getNumSqr(num, 1));
-}
-
-int getNumSqr(int num, int i)
-{
-	if (num == (i * i))
-		return (i);
-	else if (num > (i * i))
-		return (getNumSqr(num, i + 1));
-	else
-		return (-1);
 }
