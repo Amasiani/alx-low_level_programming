@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* PrimNum - Checks for  prime number
+* PrimeNum - Checks for  prime number
 * @n: value to check
 * @i: iterator
 *
@@ -29,7 +29,7 @@ int PrimeNum(unsigned int n, unsigned int i)
 
 int is_prime_number(int n)
 {
-	 if (n <= 1)
+	if (n <= 1)
 		return (0);
 	return (PrimeNum(n, 2));
 }
