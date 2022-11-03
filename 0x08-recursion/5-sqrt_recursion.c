@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
-* _sqrt_recursion - return the natural square root of a number
-* @n: value to check
+* getNumSqr - return the natural square root of a number
+* @num: value to check
+* @i: power factor
 *
 * Return: int
 */
@@ -16,6 +17,13 @@ int getNumSqr(int num, int i)
 	else
 		return (-1);
 }
+
+/**
+* _sqrt_recursion - return the natural root of a number to a value
+* @n: value to check
+*
+* Return: int
+*/
 
 int _sqrt_recursion(int n)
 {
