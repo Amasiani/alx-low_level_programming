@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-#include <tsring.h>
+#include <string.h>
 
 /**
 * check_digit - checks if a given char is a number or not
@@ -19,7 +19,9 @@ int check_digit(char *a)
 	while (i < leng)
 	{
 		if (a[i] < '0' || a[i] > '9')
+		{
 			return (-1);
+		}
 		else
 			num = num * 10 + (a[i] - '0');
 		i++;
@@ -35,7 +37,7 @@ int check_digit(char *a)
 * Return: int
 */
 
-int main(int argc, char **agrv)
+int main(int argc, char **argv)
 {
 int i, num, res;
 
