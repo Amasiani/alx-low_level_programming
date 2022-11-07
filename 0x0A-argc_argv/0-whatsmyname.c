@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* amin - print its name and do not neeed to recomplie when passed a new name
-* @agrc: number agruments passed
-* @agrv: agrument vector array of agruments passed
+* main - print its name and do not neeed to recomplie when passed a new name
+* @argc: number agruments passed
+* @argv: agrument vector array of agruments passed
 *
 * Return: int
 */
