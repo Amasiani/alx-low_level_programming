@@ -20,5 +20,5 @@ if (argc > 0)
 		counter++;
 	}
 }
-Return (0);
+return (0);
 }
