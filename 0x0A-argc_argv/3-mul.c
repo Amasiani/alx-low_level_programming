@@ -1,4 +1,4 @@
-#include "amin.h"
+#include "main.h"
 
 /**
 * main - multiples two number assumed to be store in an integer
