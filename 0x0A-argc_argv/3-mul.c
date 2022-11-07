@@ -29,7 +29,7 @@ if (argc > 0)
 			printf("Error\n");
 			return (1);
 		}
-		res = (num1 * mun2);
+		res = (num1 * num2);
 		counter++;
 	}
 	printf("%d\n", res);
