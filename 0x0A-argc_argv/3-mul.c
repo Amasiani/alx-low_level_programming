@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 {
 int counter, num1, num2, res;
 
-counter = num1 = num2 = res = 0;
+counter  = 0;
 if (argc > 0)
 {
 	while (counter < argc)
