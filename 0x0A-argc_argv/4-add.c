@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 int i, num, res;
 
 res = 0;
-for (i = 0; i < argc; i++)
+for (i = 1; i < argc; i++)
 {
 	num = check_digit(argv[i]);
 	if (num == -1)
