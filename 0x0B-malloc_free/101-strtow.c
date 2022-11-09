@@ -10,7 +10,7 @@
 
 int word_counter(char *s)
 {
-	int i, j, k'
+	int i, j, k;
 
 	i = 0;
 	k = 0;
