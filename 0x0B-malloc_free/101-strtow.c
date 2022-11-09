@@ -36,7 +36,7 @@ int word_counter(char *s)
 
 char **strtow(char *str)
 {
-	char **pp, *p;
+	char **matrix, *p;
 
 	int i, j = 0, len = 0, k = 0, start, end;
 	int words;
@@ -62,7 +62,7 @@ char **strtow(char *str)
 				while (start < end)
 					*p++ = str[start++];
 				*p = '\0';
-				pp[j] = p - k;
+				matrix[j] = p - k;
 				j++;
 				k = 0;
 			}
@@ -70,6 +70,6 @@ char **strtow(char *str)
 		else if (k++ == 0)
 			start = i;
 	}
-	pp[j] = NULL;
-	return (pp);
+	matrix[j] = NULL;
+	return (matrix);
 }
