@@ -38,7 +38,9 @@ char **strtow(char *str)
 {
 	char **pp, *p;
 
-	int i, j = 0, len = 0, words, k = 0, start, end;
+	int i, j = 0, len = 0, k = 0, start, end;
+	char words;
+
 	while (*(str + len))
 		len++;
 	words = word_counter(str);
@@ -46,7 +48,7 @@ char **strtow(char *str)
 		return (NULL);
 	for (i = 0; i <= len; i++)
 	{
-		if (str[i] == '' || str[i] == '\0')
+		if (str[i] == 0 || str[i] == '\0')
 		{
 			if (k)
 			{
