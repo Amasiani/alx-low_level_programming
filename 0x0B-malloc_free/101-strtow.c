@@ -46,8 +46,8 @@ char **strtow(char *str)
 	words = word_counter(str);
 	if (words == 0)
 		return (NULL);
-	pp = (char **) malloc(sizeof(char *) * (words + 1));
-	if (pp == NULL)
+	matrix = (char **) malloc(sizeof(char *) * (words + 1));
+	if (matrix == NULL)
 		return (NULL);
 	for (i = 0; i <= len; i++)
 	{
