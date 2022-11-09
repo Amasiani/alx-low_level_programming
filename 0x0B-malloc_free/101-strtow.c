@@ -39,11 +39,14 @@ char **strtow(char *str)
 	char **pp, *p;
 
 	int i, j = 0, len = 0, k = 0, start, end;
-	char words;
+	int words;
 
 	while (*(str + len))
 		len++;
 	words = word_counter(str);
+	if (words == 0)
+		return (NULL);
+	pp = (char **) malloc(sizeof(char *) * (words + 1));
 	if (pp == 0)
 		return (NULL);
 	for (i = 0; i <= len; i++)
