@@ -14,8 +14,7 @@ int word_counter(char *s)
 
 	i = 0;
 	k = 0;
-
-F	for (j = 0; s[j] != '\0'; j++)
+	for (j = 0; s[j] != '\0'; j++)
 	{
 		if (s[j] == 0)
 			i = 0;
