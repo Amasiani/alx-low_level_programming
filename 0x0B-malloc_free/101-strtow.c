@@ -1,0 +1,71 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+* word_counter - count the word in a string
+* @s: string check
+*
+* Return: number a words in a string
+*/
+
+int word_counter(char *s)
+{
+	int i, j, k'
+
+	i = 0;
+	k = 0;
+
+F	for (j = 0; s[j] != '\0'; j++)
+	{
+		if (s[j] == 0)
+			i = 0;
+		else if (i == 0)
+		{
+			i = 1;
+			k++;
+		}
+	}
+	return (k);
+}
+
+/**
+* **strtow - splite into two words
+* @str: string to split
+*
+* Return: pointer to words else null
+*/
+
+char **strtow(char *str)
+{
+	char **pp, *p;
+
+	int i, j = 0, len = 0, words, k = 0, start, end;
+	while (*(str + len))
+		len++;
+	words = word_counter(str);
+	if (pp == 0)
+		return (NULL);
+	for (i = 0; i <= len; i++)
+	{
+		if (str[i] == '' || str[i] == '\0')
+		{
+			if (k)
+			{
+				end = i;
+				p = (char *) malloc(sizeof(char) * (j + 1));
+				if (p == NULL)
+					return (NULL);
+				while (start < end)
+					*p++ = str[start++];
+				*p = '\0';
+				pp[j] = p - k;
+				j++;
+				k = 0;
+			}
+		}
+		else if (k++ == 0)
+			start = i;
+	}
+	pp[j] = NULL;
+	return (pp);
+}
