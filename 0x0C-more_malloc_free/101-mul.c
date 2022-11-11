@@ -10,7 +10,7 @@
 * Return: Always 0
 */
 
-void _is_zero(char **agrv)
+void _is_zero(char *argv[])
 {
 	int i, n1 = 1, n2 = 1;
 
@@ -38,20 +38,20 @@ void _is_zero(char **agrv)
 }
 
 /**
-* _initialize_array - set memory to Zero in a new array
+* *_initialize_array - set memory to Zero in a new array
 * @arr: char array
-* @len: length of the char array
+* @leng: length of the char array
 *
 * Return: pointer of an array
 */
 
-char *_initialize_array(char *arr, int len)
+char *_initialize_array(char *arr, int leng)
 {
 	int i = 0;
 
-	for (i = 0; i < len; i++)
+	for (i = 0; i < leng; i++)
 		arr[i] = '\0';
-	arr[len] = '\0';
+	arr[leng] = '\0';
 	return (arr);
 }
 
@@ -64,7 +64,7 @@ char *_initialize_array(char *arr, int len)
 * Return: length of the number
 */
 
-int _checknum(char **argv, int n)
+int _checknum(char *argv[], int n)
 {
 	int lens;
 
@@ -94,26 +94,23 @@ int ln1, ln2, lout, add, addl, i, j, k, c;
 char *nout;
 
 if (argc != 3)
+	printf("Error\n"), exit(98);
+ln1 = _checknum(argv, 1), ln2 = _checknum(argv, 2);
+_is_zero(argv), lout = ln1 + ln2, nout = malloc(lout + 1);
+if (nout == NULL)
+	printf("Error\n"), exit(98);
+nout = _initialize_array(nout, lout);
+k = lout - 1, i = ln1 - i, j = ln2 - 1, c = addl = 0;
+for (; k >= 0; k--, i--)
 {
-	if (argc != 3)
-		printf("Error\n"), exit(98);
-	ln1 = _checknum(argv, 1), ln2 = _checknum(argv, 2);
-	_is_zero(argv), lout = ln1 + ln2, nout = malloc(lout + 1);
-	if (nout == NULL)
-		printf("Error\n"), exit(98);
-	nout = _initialize_array(nout, lout);
-	k = lout - 1, i = ln1 - i, j = ln2 - 1, c = addl = 0;
-	for (; k >= 0; k--, i--)
+	if (i < 0)
 	{
-		if (i < 0)
+		if (addl > 0)
 		{
-			if (addl > 0)
-			{
-				add = (nout[k] - '0') + addl;
-				if (add > 9)
-					nout[k - 1] = (add / 10) + '0';
-				nout[k] = (add % 10) + '0';
-			}
+			add = (nout[k] - '0') + addl;
+			if (add > 9)
+				nout[k - 1] = (add / 10) + '0';
+			nout[k] = (add % 10) + '0';
 		}
 		i = ln1 - 1, j--, addl = 0, c++, k = lout - (1 + c);
 	}
@@ -128,6 +125,7 @@ if (argc != 3)
 	if (j >= 0)
 	{
 		add = ((argv[1][i] - '0') * (argv[2][j] - '0')) + (nout[k] - '0') + addl;
+		addl = add / 10, nout[k] = (add % 10) + '0';
 	}
 }
 printf("%s\n", nout);
