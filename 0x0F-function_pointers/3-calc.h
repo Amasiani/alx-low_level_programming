@@ -1,8 +1,8 @@
-#ifndef 3_CALC_H
-#define 3_CALC_H
+#ifndef STRUCT_H
+#define STRUCT_H
 
 #include <stdio.h>
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
 * struct op - Structure op
