@@ -1,5 +1,6 @@
-#ifndef VARFUNC_H
-#define VARFUNC_H
+#ifndef VARIADIC_FUNCTIONS_H
+#define VARIADIC_FUNCTIONS_H
+#include <stdlib.h>
 #include <stdarg.h>
 
 int _putchar(char c);
@@ -17,7 +18,7 @@ void print_all(const char * const format, ...);
 typedef struct type
 {
 	char *op;
-	void (*f)(vaa_list, char *);
+	void (*f)(va_list, char *);
 } type_t;
 
 #endif
