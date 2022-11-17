@@ -61,3 +61,16 @@ int op_mod(int a, int b)
 	}
 	return (a % b);
 }
+
+/**
+* op_mul - multiple two numbers
+* @a: first value to check
+* @b: second value to check
+*
+* Return: Result
+*/
+
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
