@@ -29,7 +29,7 @@ if (nbytes < 0)
 }
 for (i 0; i < nbytes; i++)
 {
-	printf("02x", opc[i] & 0xFF);
+	printf("%02x", opc[i] & 0xFF);
 	if (i != nbytes - 1)
 		printf(" ");
 }
