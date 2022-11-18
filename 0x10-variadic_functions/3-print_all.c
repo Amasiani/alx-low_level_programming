@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
-* print_int - print integer
+* print_integers - print integer
 * @list: argument list
 * @separator: string separator between integers
 *
@@ -40,7 +40,10 @@ void print_strings(va_list list, char *separator)
 
 	st = va_arg(list, char *);
 	if (st == NULL)
-		printf("%s%s", separator, st = "(nil)");
+	{
+		st = "(nil)";
+		printf("%s%s", separator, st);
+	}
 }
 
 /**
