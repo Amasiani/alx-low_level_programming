@@ -21,8 +21,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		if (j == NULL)
 			printf("(nill)");
 		else
+		{
 			if (i < (n - 1) && separator != 0)
 				printf("%s%s", j, separator);
+			else
+				printf("%s", j);
+		}
 	}
 	va_end(list);
 	printf("\n");
