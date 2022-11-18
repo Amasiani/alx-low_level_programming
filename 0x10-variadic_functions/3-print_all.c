@@ -17,7 +17,7 @@ void print_integers(va_list list, char *separator)
 * print_characters - string charaters
 * @list: argument list
 * @separator: separator between characters
-* 
+*
 * Return: Always 0
 */
 
@@ -38,7 +38,7 @@ void print_strings(va_list list, char *separator)
 {
 	char *st;
 
-	st = va_arg(list , char *);
+	st = va_arg(list, char *);
 	if (st == NULL)
 		printf("%s%s", separator, st = "(nil)");
 }
