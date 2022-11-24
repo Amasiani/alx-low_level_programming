@@ -8,10 +8,10 @@
 * Return: address of the new element
 */
 
-list_t *add_node(list_ **head, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
 	list_t *newNode;
-	unsigned int len = 0;
+	unsigned int length = 0;
 
 	newNode = malloc(sizeof(list_t));
 	if (newNode == NULL)
