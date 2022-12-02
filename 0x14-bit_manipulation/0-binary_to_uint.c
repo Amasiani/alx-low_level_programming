@@ -8,7 +8,7 @@
 * or than 0 and 1
 */
 
-unsigned int binary_to_uint(cons char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	int i, opt;
 	unsigned int number;
