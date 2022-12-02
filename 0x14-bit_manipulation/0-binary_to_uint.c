@@ -23,7 +23,7 @@ unsigned int binary_to_uint(const char *b)
 	for (i--, opt = 1; i >= 0; i--, opt *= 2)
 	{
 		if (b[i] != 48 && b[i] != 49)
-			return (number);
+			return (0);
 		if (b[i] & 1)
 			number += opt;
 	}
