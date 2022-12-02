@@ -15,14 +15,14 @@ unsigned int binary_to_uint(cons char *b)
 
 	if (!b)
 		return (0);
-	for (i = number = 0; b[i] != 0; i++)
-		if (b[i] != 48 && b[i] != 49)
-			return (number);
-	for (i -= 1, opt = 0; i >= 0; i--, opt++)
+	for (i =  0; b[i] != '\0'; i++)
+		;
+	for (i--, opt = 1; i >= 0; i--, opt *= 2)
 	{
-		if (b[i] == 48)
-			continue;
-		number += 1 << opt;
+		if (b[i] != 48 && b[i] != 49)
+			return (0);
+		if (b[i] & 1)
+			number += opt;
 	}
 	return (number);
 }
