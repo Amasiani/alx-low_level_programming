@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-* print_listint - print all element of a listint_t list
+* listint_len - print all element of a listint_t list
 * @h: Head of the list
 *
 * Return: Number of elements
