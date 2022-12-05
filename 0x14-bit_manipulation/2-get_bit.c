@@ -8,7 +8,7 @@
 * Return: I if it worked else -1
 */
 
-int get_bit(unsigned int n, unsigned int index)
+int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int i;
 
