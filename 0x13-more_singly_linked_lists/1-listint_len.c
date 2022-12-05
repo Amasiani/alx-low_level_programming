@@ -9,9 +9,13 @@
 
 size_t listint_len(const listint_t *h)
 {
-	int i;
+	size_t  i = 0;
 
-	for (i = 0; h != NULL; i++, h = h->next)
+	while (h)
+	{
 		printf("%d\n", h->n);
+		i++;
+		h = h->next;
+	}
 	return (i);
 }
