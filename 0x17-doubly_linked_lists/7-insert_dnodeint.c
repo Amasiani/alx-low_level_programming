@@ -2,11 +2,12 @@
 
 /**
 * insert_dnodeint_at_index - Insert a new_node at a given position
-* @head: Head of the list
+* @h: Head of the list
 * @idx: Position for the inswertion of the new_node
 * @n: Value of the node
 *
 * Description: Insert n into a dlistimt_t linked list
+* Return: Pointer to the new_node node
 */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
@@ -19,7 +20,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	if (idx == 0)
 		return (add_dnodeint(h, n));
-	
+
 	actual = *h;
 	for (i = 0; actual && i < idx; i++)
 		actual = actual->next;
