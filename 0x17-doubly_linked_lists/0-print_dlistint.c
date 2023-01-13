@@ -6,6 +6,7 @@
 * @h: Head of a linked list
 *
 * Return: Number of elements of the list
+* Description: Print all the elements of a linked list
 */
 i
 size_t print_distint(const dlistint_t *h)
