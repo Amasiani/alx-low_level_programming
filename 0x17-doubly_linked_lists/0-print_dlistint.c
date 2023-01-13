@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-* print_distinct - Print a doubly linked list
+* print_distint - Print a doubly linked list
 *
 * @h: Head of a linked list
 *
@@ -9,7 +9,7 @@
 * Description: Print all the elements of a linked list
 */
 i
-size_t print_distint(const dlistint_t *h)
+size_t print_dlistint(const dlistint_t *h)
 {
 	size_t elements;
 
