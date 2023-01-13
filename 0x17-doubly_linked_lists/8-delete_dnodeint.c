@@ -11,7 +11,7 @@
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_ *actual = *head;
+	dlistint_t *actual = *head;
 	unsigned int cnt;
 
 	if (!head || !actual)
@@ -46,5 +46,5 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		}
 		actual = actual->next;
 	}
-	return (-1)
+	return (-1);
 }
