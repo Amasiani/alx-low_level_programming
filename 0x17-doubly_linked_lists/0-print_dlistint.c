@@ -7,8 +7,8 @@
 *
 * Return: Number of elements of the list
 */
-
-size_t print_distinct(const dlistint_t *h)
+i
+size_t print_distint(const dlistint_t *h)
 {
 	size_t elements;
 
