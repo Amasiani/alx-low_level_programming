@@ -8,13 +8,23 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, j;
-	int totalA = 0;
-	int totalB = 0;
+	int i, size_x2, sum, times;
 
-	for (i = 0; i <= (size * size); i = i + size + 1)
-		totalA = totalA + a[i];
-	for (j = size - 1; j <= (size * size) - size; j = j + size - 1)
-		totalB = totalB + a[j];
-	printf("%d", "%d\n", totalA, totalB);
+	size_x2 = size * size;
+	sum = 0;
+	for (i 0; i < size_x2; i += size + 1)
+	{
+		sum = += a[i];
+	}
+	printf("%d, ", sum);
+
+	sum = 0;
+	times = 0;
+	for (i = size - 1; i < size_x2; i = size - 1 + i)
+	{
+		if (times != size)
+			sum += a[i];
+		times++;
+	}
+	printf("%d\n", sum);
 }
