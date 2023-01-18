@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _strchr -  Locates a character ijn a sting
+* _strchr -  Locates a character inn a string
 *
 * @s: string to receive and return
 * @c: Character to receive
@@ -10,11 +10,12 @@
 
 char *_strchr(char *s, char c)
 {
-	while (*s != '\0')
+	for (; *s; s++)
 	{
 		if (*s == c)
 			return (s);
-		s++;
 	}
-	return (NULL);
+	if (*s == c)
+		return (s);
+	return (0);
 }
