@@ -11,7 +11,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	f_dt form_types[] = {
+	type_t type[] = {
 		{ "c", print_a_char },
 		{ "i", print_a_integer },
 		{ "f", print_a_float },
@@ -28,9 +28,9 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (j < 4)
 		{
-			if (format[i] == *type_t[j].op)
+			if (format[i] == *type[j].op)
 			{
-				type_t[j].f(args, separator);
+				type[j].f(args, separator);
 				separator = ", ";
 			}
 			j++;
