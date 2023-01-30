@@ -28,9 +28,9 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (j < 4)
 		{
-			if (format[i] == *form_types[j].identifier)
+			if (format[i] == *type_t[j].op)
 			{
-				form_types[j].f(separator, args);
+				type_t[j].f(args, separator);
 				separator = ", ";
 			}
 			j++;
