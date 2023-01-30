@@ -23,7 +23,7 @@ void print_a_char_ptr(char *separator, va_list args);
 typedef struct type
 {
 	char *op;
-	void (*f)(va_list args, char *separator);
+	void (*f)(char *separator, va_list args);
 } type_t;
 
 #endif

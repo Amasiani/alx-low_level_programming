@@ -1,6 +1,4 @@
 #include "variadic_functions.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
  * print_all - Prints anything
@@ -30,7 +28,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == *type[j].op)
 			{
-				type[j].f(args, separator);
+				type[j].f(separator, args);
 				separator = ", ";
 			}
 			j++;
