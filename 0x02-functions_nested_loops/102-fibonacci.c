@@ -8,21 +8,19 @@
 
 int main(void)
 {
-long int a = 1;
-long int b = 2;
-int num = 0;
-long fib;
+	long int n1, n2, fn;
+	int c;
 
-while (num < 50)
-{
-	fib = a + b;
-	if (num != 49)
-		printf("%ld, ", fib);
-	else
-		printf("%ld\n", fib);
-	a = b;
-	b = fib;
-	num += 1;
-}
-return (0);
+	n1 = 1;
+	n2 = 2;
+	printf("%ld, %ld", n1, n2);
+	for (c = 0; c < 48; c++)
+	{
+		fn =  n1 + n2;
+		printf(", %ld", fn);
+		n1 = n2;
+		n2 = fn;
+	}
+	printf("\n");
+	return (0);
 }
