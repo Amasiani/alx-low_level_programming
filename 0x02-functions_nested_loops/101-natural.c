@@ -9,15 +9,13 @@
 
 int main(void)
 {
-int multiple = 0;
-int result = 0;
-while (multiple < 1024)
-{
-	if (multiple % 3 == 0 || multiple % 5 == 0)
+	int a, b;
+
+	for (a = 1; a < 1024; a++)
 	{
-		result += multiple;
+		if ((a % 3) == 0 || (a % 5) == 0)
+		b += a;
 	}
-printf("%d\n", result);
-return (0);
-}
+	printf("%d\n", b);
+	return (0);
 }
