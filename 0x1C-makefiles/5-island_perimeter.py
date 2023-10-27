@@ -1,26 +1,31 @@
 #!/usr/bin/python3
-"""Defines an island perimeter measuring function."""
+""" Program that discover the perimeter of an island depends on grid """
 
 
 def island_perimeter(grid):
-    """Return the perimeter of an island.
-    The grid represents water by 0 and land by 1.
-    Args:
-        grid (list): A list of list of integers representing an island.
-    Returns:
-        The perimeter of the island defined in grid.
+    """ returns the perimeter of the island described in grid
+    examp: 0 0 0
+           0 1 0
+           0 0 0
+    Res: this will return 4, because One cell is a square with side length 1,
+    if side right/left of int 1 is shared by 0, we incremment the counter.
+    Also, perimeter of rectangle is (2 * (widht + height))
     """
-    width = len(grid[0])
-    length = len(grid)
-    edges = 0
-    size = 0
+    perim = 0
+    srow = len(grid)
+    for row in range(srow):
+        scol = len(grid[row])
+        for col in range(scol):
+            if grid[row][col] == 1:
+                if (row == 0 or (grid[row - 1][col] != 1)):
+                    perim += 1
+                if (row == (srow - 1) or (row < srow - 1 and
+                                          grid[row + 1][col] != 1)):
+                    perim += 1
+                if (col == 0 or (grid[row][col - 1] != 1)):
+                    perim += 1
+                if (col == (scol - 1) or (col < scol - 1 and
+                                          grid[row][col + 1] != 1)):
+                    perim += 1
+    return (perim)
 
-    for i in range(height):
-        for j in range(width):
-            if grid[i][j] == 1:
-                size += 1
-                if (j > 0 and grid[i][j - ] == 1)
-                    edges += 1
-                if (i > 0 and grid[i - 1][j] == 1)
-                    edges += 1
-    return size * 4 - edges * 2
